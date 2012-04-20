@@ -6,14 +6,7 @@ This is the api interface that allows you to run api requests to The Open Source
 Documentation
 =============
 
-Action Function
--------------
-Parameters<br />
-	1. Action<br />
-	2. Id
-
-
-Actions
+Functions
 -------------
 1. Get User Info (userinfo) - { action = userinfo, id = userid }
 2. Get User Posts (userposts) - { action = userposts, id = userid }
