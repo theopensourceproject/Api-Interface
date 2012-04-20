@@ -1,5 +1,5 @@
 <?php
-	class api
+	class openapi
 	{
 		const API_URL = 'http://api.theopensourceproject.org/api.php';
 		private static function send_post_data($data){
@@ -28,15 +28,20 @@
 		}
 		public static function action($act, $id){
 			$request = array(
-				'act'	       => $act,
+				'act'	  => $act,
 				'id'      => $id,
 			);
 			return json_decode(self::send_post_data($request), true);
 		}
+
+		public static function userinfo($userid){
+			openapi::action("userinfo", $userid);
+		}
+
 		public static function login($email, $password){
 			$request = array(
-				'act'	       => "login",
-				'email'      => $email,
+				'act'	   => "login",
+				'email'    => $email,
 				'password' => $password,
 			);
 			return json_decode(self::send_post_data($request), true);
