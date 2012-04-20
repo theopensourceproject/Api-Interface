@@ -6,4 +6,8 @@ This is the api interface that allows you to run api requests to The Open Source
 Documentation
 =============
 
-1. To use the Api you must use the action function 
+Action Function
+-------------
+Parameters
+	1. Action
+	2. Id
