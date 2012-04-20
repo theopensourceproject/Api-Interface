@@ -8,6 +8,6 @@ Documentation
 
 Action Function
 -------------
-Parameters
+Parameters<br />
 	1. Action
 	2. Id
