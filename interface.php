@@ -35,7 +35,28 @@
 		}
 
 		public static function userinfo($userid){
-			openapi::action("userinfo", $userid);
+			return openapi::action("userinfo", $userid);
+		}
+
+		public static function userposts($userid){
+			return openapi::action("userposts", $userid);
+		}
+
+		public static function groupinfo($groupid){
+			return openapi::action("groupinfo", $groupid);
+		}
+
+		public static function groupposts($groupid){
+			return openapi::action("groupposts", $groupid);
+			//return $array = array(1,2,4,5);
+		}
+
+		public static function groupmembers($groupid){
+			return openapi::action("groupmembers", $groupid);
+		}
+
+		public static function memberof($userid){
+			return openapi::action("memberof", $userid);
 		}
 
 		public static function login($email, $password){
@@ -47,4 +68,5 @@
 			return json_decode(self::send_post_data($request), true);
 		}
 	}
+
 ?>
