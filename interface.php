@@ -48,7 +48,14 @@
 
 		public static function groupposts($groupid){
 			return openapi::action("groupposts", $groupid);
-			//return $array = array(1,2,4,5);
+			/*
+				THIS FUNCTION IS NOT CURRENTLY WORKING PROPERLY...
+				I NEED TO FIND OUT WHY GROUP POSTS DONT WORK
+
+				MAYBE 
+				1. THERE ARE MULTIPLE ARRAYS
+				2. NO GROUP POSTS YET - MOST ACCURATE
+			*/
 		}
 
 		public static function groupmembers($groupid){
